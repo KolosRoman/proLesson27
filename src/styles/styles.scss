@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+div,
+h1,
+h2,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(228, 214, 196);
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+
+    &.users-albums-button {
+        background-color: aqua;
+
+        &:hover {
+            background-color: rgb(4, 56, 56);
+            color: #ffffff;
+        }
+    }
+
+    &.album-block-button {
+        background-color: #f79cf2;
+
+        &:hover {
+            background-color: #f80fec;
+            color: #ffffff;
+        }
+    }
+
+    &.get-photo-button {
+        width: 200px;
+        background-color: #eef79c;
+
+        &:hover {
+            background-color: #788506;
+            color: #ffffff;
+        }
+    }
+}
+
+
+.users-container {
+    padding: 10px;
+
+    .users-title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+
+    .users-block {
+        display: grid;
+        // grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px;
+
+        .user-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .users-name {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+}
+
+.photo-page-container {
+    padding: 10px;
+
+    .photo-page-title {
+        text-align: center;
+    }
+
+    .photo-page-header {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
